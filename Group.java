@@ -112,11 +112,11 @@ public class Group implements Voenkom{
 
 	@Override
 	public String toString() {
-		StringBuilder sb = new StringBuilder("√рупа є " + this.groupName + System.lineSeparator());
+		StringBuilder sb = new StringBuilder("Group: " + this.groupName + System.lineSeparator());
 		for (int i = 0; i < groupStudents.length; i++) {
 			if (groupStudents[i] == null) {
 				sb.append(i + 1 + ") ");
-				sb.append("в≥льне м≥сце");
+				sb.append("empty");
 				sb.append(System.lineSeparator());
 			} else {
 				sb.append(i + 1 + ") ");
