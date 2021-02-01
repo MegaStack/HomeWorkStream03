@@ -3,8 +3,8 @@ package com.gmail.oastro36;
 import java.util.Comparator;
 
 public class ComparatorOfStudents implements Comparator {
-	private int typeSorting;// 0 - ïî ³ìåí³, 1 - ïî ïð³çâèùó, 2 - ïî áàòüêîâ³, 3 - ïî â³êó 
-	private int direction;// 1 - ñîðòóâàííÿ ïî çðîñòàííþ, -1 - ïî ñïàäàííþ
+	private int typeSorting;// 0 - by name, 1 - by lastname, 2 - by surename, 3 - by age 
+	private int direction;// 1 - ascending, -1 - descending
 	
 	public ComparatorOfStudents(int typeSorting, int direction) {
 		super();
