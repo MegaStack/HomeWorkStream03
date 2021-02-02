@@ -16,7 +16,7 @@ public class SaveGroupToFile {
 		StringBuilder sb = new StringBuilder();
 
 		for (int i = 0; i < student.length; i++) {
-			if (i < student.length - 1) {
+			if (i < student.length) {
 				sb.append("" + student[i].getName() + " ");
 				sb.append("" + student[i].getLastName() + " ");
 				sb.append("" + student[i].getSureName() + " ");
@@ -24,15 +24,9 @@ public class SaveGroupToFile {
 				sb.append("" + ((student[i].isSex()) ? "m" : "w") + " ");
 				sb.append("" + student[i].getGroupName() + " ");
 				sb.append("" + student[i].getZachNumber());
-				sb.append(System.lineSeparator());
-			} else {
-				sb.append("" + student[i].getName() + " ");
-				sb.append("" + student[i].getLastName() + " ");
-				sb.append("" + student[i].getSureName() + " ");
-				sb.append("" + student[i].getAge() + " ");
-				sb.append("" + ((student[i].isSex()) ? "m" : "w") + " ");
-				sb.append("" + student[i].getGroupName() + " ");
-				sb.append("" + student[i].getZachNumber());
+				if (i < student.length - 1) {
+					sb.append(System.lineSeparator());
+				}
 			}
 		}
 
